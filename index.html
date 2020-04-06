@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Samsung Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+  <script src="index.js"></script>
+</head>
+
+<body onload="drawLista(); carousel()";>
+  <div class="header">
+      <div class="center">
+        <a class="button" href="index.html">Home</a>
+        <a id="aLogo" href="index.html"> <img src="Photos//Logo.png" alt="no logo" id="logo"> </a>
+        <a class="button" href="cart.html"><i class="fa fa-shopping-cart"></i>Shopping Cart</a>
+        <a class="button" href="admin.html"><i class="fa fa-lock"></i>Admin</a>
+      </div>
+      <hr>
+      <div class="w3-content w3-section" style="max-width:2000px">
+        <img class="mySlides" src="Slider/1.png" style="width:100%">
+        <img class="mySlides" src="Slider/3.png" style="width:100%">
+        <img class="mySlides" src="Slider/4.png" style="width:100%">
+      </div>
+      </div>
+    </hr>
+
+      <hr>
+    </div>
+    <div class="article">
+      <h3><b>Produse</b></h3>
+      <div><img src="Photos//loader.gif" id="loading" alt="no image"> <br> </div>
+      <form class="search" onsubmit="event.preventDefault();drawLista();">
+        <input type="text" name="text_box_1" id="text_box_1" placeholder="search product...">
+        <button type="button" id="button2" onclick="drawLista()"> <i class="fa fa-search"></i></button>
+      </form>
+  
+
+      <div id="listaProduse">
+        <ul>
+          <li> Imagine </li>
+          <li> Nume </li>
+          <li> <span>Pret</span> <span>Detalii</span> </li>
+        </ul>
+      </div>
+  </div>
+  <hr class="hrFooter">
+  <p class="footerMade">Andrei Similea © 2020.</p>
+  <div class="footer"></div>
+</body>
+
+</html>

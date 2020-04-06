@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+}
+
+.w3-content{max-width:1200px;margin:auto}
+
+/* Slider */
+.mySlides {display:none;}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  border:0px;
+  margin:0px;
+  background-color: white;
+}
+
+.header {
+  background-color:white;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  max-width:1200px;
+  margin:auto
+}
+
+.hrFooter {
+  width:80%;
+  display:block;
+  margin-left: 10%;
+  margin-right: 10%;
+  }
+
+.footerMade{
+  text-align: center;
+}
+
+.article{
+  display:block;
+  width:80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.footer{
+  background-color:none;
+  text-align:center;
+  color:white;
+  padding:10px;
+  width:80%;
+  display:block;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom:1%;
+  }
+
+.center{
+  margin-left:7%; 
+  
+}
+#logo{
+  width:350px;
+  margin-bottom:0px;
+}
+
+#headerPhoto{
+  width:95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.responsive {   
+    padding: 0 12px;
+    width: 20%;
+}
+
+.produs{
+  width:21%;
+  display:inline-block;
+  border:solid 1px #ccc;
+  margin:20px;
+  padding:10px;
+  height:400px;
+}
+
+.produs:hover {
+  border:solid 2px #777;
+}
+
+.none{
+  display:none;
+  width:200px;
+  border:none;
+  background-color: none;  
+}
+
+.imagine{
+  width: 100%;
+  height: auto;
+}
+
+ul{
+  list-style: none;
+  margin:auto;
+}
+
+#loading{
+  width:15%;
+  display: block;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+#listaProduse{
+  width:90%;
+  margin-left: 5%;
+  margin-right: 5%;  
+}
+
+.detalii{
+  font-style: normal;
+  display:block;
+  width:100%;
+  padding-bottom:120px;
+}
+
+.pret{
+    padding:15px;
+    display: block;
+    font-size:14px;
+    font:arial;
+    font-weight: bold;
+    font-style: italic;
+    width:100%;   
+}
+
+h3{
+  text-align: center;
+  font:arial;
+  font-size:20px;
+  width:80%;
+  display:block;
+  margin-left: 10%;
+  margin-right: 10%; 
+}
+
+.search{
+  margin:auto;
+  max-width:300px;
+  display:block;
+  margin-bottom:60px; 
+}
+
+.nume{
+    padding:5px;
+    text-align: center;
+    display: inline-block;
+    font-size:14px;
+    width:100%;
+    font:arial;
+}
+
+form.search input[type=text] {
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    color:black;
+}
+
+form.search button {
+    float: right;
+    width: 20%;
+    padding: 1.25px;
+    background: rgb(43, 119, 235);
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+a:link, a:visited {
+    background-color: white;
+    border-radius: 15px;
+    color: #414141;
+    border: 1px solid #e7e7e7;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:14px;
+    font:arial;
+    font-weight:bold;   
+}
+
+a:hover, a:active {
+    background-color: rgb(43, 119, 235);
+    color: black;
+    border:solid 1px #777;
+}
+
+#aLogo {
+  background-color: white;
+  border: white;
+}
+
+.imgProdus:link, .imgProdus:visited{
+    background-color: white;  
+    border: 1px solid #e7e7e7;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:14px;
+    font:arial;
+    font-weight:bold;
+}
+
+@media only screen and (min-width: 769px) {
+    .responsive {
+        width: 100%;
+        margin: 6px 0;
+    }
+
+  .produs{
+      vertical-align: top;
+  }    
+  .pret{
+      display:block;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .responsive {
+      width: 100%;
+      margin: 6px 0;      
+  }
+
+  .produs{
+    vertical-align: top;
+    width:40%;
+    height:370px;
+    min-width:130px;
+  }
+
+  #logo{
+    width:100%;
+    display: block;
+    float:center;
+  }
+
+    .header{
+      width:100%;
+    } 
+
+  .detalii{
+    display:inline-block;
+    width:100%;
+    margin-bottom:10px;    
+  }
+
+  .pret{
+    display:inline-block;
+    width:100%;
+    text-align: center; 
+    position:relative;
+  }
+
+  .center{
+    margin:0px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+    .responsive {
+        width: 100%;
+        margin:0;
+    }
+
+    .nume{
+      width:95%;
+      font-size:1em;
+    }
+
+    .produs{
+      display:block;
+      width:90%;
+      margin-right:5%;
+      margin-left:5%;
+      min-height:370px;
+      height:21%;
+    }
+
+   #logo{
+     width:100%;
+     display: block;
+     float:center;
+   }
+
+    .detalii{
+      display:-block;
+      width:100%;
+      float:right;    
+    }
+    
+    .pret{
+      display:block;
+      width:100%;
+      float:left;
+  }
+
+  .center{
+    margin:0px;
+  }
+
+  .image{
+    width:85%;
+  }
+
+}
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
